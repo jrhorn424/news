@@ -1,0 +1,136 @@
+[*]
+% Kill all articles which are uppercase and contain $ sign
+  Score: =-9999
+  Subject: \$
+ ~Subject: \c[a-z]
+
+% Kill all of these too.
+  Score:: =-9999
+  % Kill anything cross-posted to news.answers.
+  % It is probably a long FAQ.
+  Newsgroups: news.answers
+
+  Subject: http://
+  Subject: \d\d\d-[0-z][0-z][0-z]-[0-z][0-z][0-z][0-z]
+  Subject: ^\$\
+  Subject: (no subject
+  Subject: (none)
+  Subject: \<\d\d\d[-+ ]\d\d\d\d\>
+  Subject: \<011-
+  Subject: \<[89]00-
+  Subject: \<Cash\>
+  Subject: ^FREE\>
+  Subject: ^Re: FREE\>
+  Subject: Wincash.zip
+  Subject: fast.?money
+  Subject: \$MONEY
+  Subject: \c\<MONEY\>
+  Subject: \<fastcash\>
+  Subject: \$\$
+  Subject: \<make +\$
+  Subject: \<earn money\>
+  Subject: \<earn +\$
+  Subject: ^!+ +
+  Subject: sex
+  Subject: \<vitamin\>
+  Subject: \<viagra\>
+  Subject: \<prozac\>
+  Subject: \<cheap\>
+  Subject: \<xxx\>
+  Subject: \<solutions\>
+
+% Kill crosspostings
+  Score:: =-9999
+  Newsgroups: advocacy
+  Newsgroups: windows
+  Newsgroups: conspiracy
+  Newsgroups: flame
+  Newsgroups: kook
+  Newsgroups: microsoft
+  Newsgroups: politics
+  Newsgroups: ,.*,.*,
+
+  Score:: =-9999
+  From: respondby@mail.com
+  From: @sina\.com
+  From: @email\.com
+  From: sex
+  From: valarezo7@hotmail\.com
+  From: @meldon\.com
+  From: anticreep33333@gmail\.com
+
+[news.software.*]
+% Kill all articles pertaining to Windows newsreaders
+  Score:: =-9999
+  Subject: \<agent\>
+  Subject: \<forte\>
+  Subject: \<fa\>
+  Subject: \<freeagent\>
+  Subject: \<F?agent\d
+  Subject: \<Fagent
+  Subject: \<X-?press
+  Subject: Win ?VN
+  Subject: \<News ?watcher\>
+  Subject: \<nx2?\>
+  Subject: \<news? ?e?x ?press?\>
+  Subject: press95\>
+  Subject: gravity
+  Subject: virtual access
+  Newsgroups: winsock
+
+[~*.test]
+% Kills all "test" posts not in a *test ng
+  Score: -9999
+  Subject: ^test$
+
+%BOS
+%Score created by slrn on Wed Sep  2 15:02:22 2015
+
+[*]
+Score: =-9999
+%Expires:
+% Subject: Pantoprazole Tablets & Capsules, Antacids Tablets, Omeprazole &  Domperidone, Rabeprazole Tablets & Capsules, Hydrocodone, Vicodin,  Xanax, Valium, Adipex, Albuterol, Allegra, Alprazolam, Ambien,  Amitriptyline, Anabolics, Antibiotics, Atenolol, Ati
+  From: austyndark@gmail\.com
+% References: <73c3b86b-9c66-4fda-8d6f-f2b5dd4afc88@googlegroups\.com>
+% Xref:
+% Newsgroup: alt\.smokers\.pipes
+%EOS
+
+%BOS
+%Score created by slrn on Wed Sep  2 15:02:43 2015
+
+[*]
+Score: =-9999
+%Expires:
+% Subject: (IVÁN): VIVIMOS, BENDECIDOS EN LOS LUGARES CELESTIALES, POR NUESTRO DIOS Y PADRE:
+  From: IVANIVAN555@aol\.com
+% References: <3548afba-adc3-4224-8d77-e910a6bd01c8@googlegroups\.com>
+% Xref:
+% Newsgroup: alt\.smokers\.pipes
+%EOS
+
+%BOS
+%Score created by slrn on Wed Sep  2 15:03:06 2015
+
+[*]
+Score: =-9999
+%Expires:
+% Subject: Pure White Heroin for sale, with fast and overnight delivery internationally, with purity 99\.96\.\.\.\.
+  From: samaweed20@gmail\.com
+% References: <5b242400-3619-40a8-a28e-0e84ef6fd763@googlegroups\.com>
+% Xref:
+% Newsgroup: alt\.smokers\.pipes
+%EOS
+
+[alt.smokers.pipes]
+Score:: =-9999
+  Subject: afternoon smoke
+  Subject: morning smoke
+  Subject: evening smoke
+  Subject: SUN\.
+  Subject: MON\.
+  Subject: TUES\.
+  Subject: WED\.
+  Subject: THURS\.
+  Subject: FRI\.
+  Subject: SAT\.

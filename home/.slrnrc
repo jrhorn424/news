@@ -1,0 +1,59 @@
+set username "jeff"
+set hostname "jrhorn.me"
+set realname "Jeffrey Horn"
+
+set signature ".news/signature"
+
+set server_object "spool"
+set post_object "slrnpull"
+set use_slrnpull 1
+set write_newsrc_flags 0
+
+set spool_root ".news/news"
+
+set spool_inn_root ".news"
+set spool_active_file "active"
+set spool_activetimes_file "active.times"
+set spool_newsgroups_file "newsgroups"
+
+set spool_nov_root ".news/news"
+set spool_nov_file "overview"
+set spool_check_up_on_nov 1
+
+set generate_message_id 0
+set read_active 1
+
+set abort_unmodified_edits 1
+
+set non_Xbrowser "w3m '%s'"
+set Xbrowser "open '%s'"
+
+set sendmail_command "/usr/local/bin/msmtp -t"
+set generate_email_from 1
+
+set save_posts ".mail/Sent Items"
+set save_replies ".mail/Sent Items"
+set failed_posts_file ".news/dead.letter"
+set scorefile ".news/score"
+set decode_directory ".news"
+set save_directory ".news"
+set postpone_directory ".news/postponed"
+
+set followup_string "On %D, %r <%f> wrote:"
+set reply_string "In %n, you wrote:"
+
+charset display "utf-8"
+charset outgoing "utf-8"
+set use_metamail 0
+
+set sorting_method 9
+set new_subject_breaks_threads 1
+
+visible_headers "From:,Subject:,Newsgroups:,Followup-To:,Reply-To:"
+set invalid_header_score -1000
+
+include ".slrn/colors"
+
+include ".slrn/keys"
+
+% vim:set ft=slrnrc:

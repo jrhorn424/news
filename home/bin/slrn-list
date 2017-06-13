@@ -1,0 +1,7 @@
+#!/bin/sh
+
+slrn="/usr/local/bin/slrn"
+server="news.newsdemon.com"
+groups="$HOME/.news/data/newsgroups"
+
+$slrn --nntp -h $server -a -f $groups
